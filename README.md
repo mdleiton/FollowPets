@@ -1,2 +1,0 @@
-# FollowPets
-Proyecto POO
