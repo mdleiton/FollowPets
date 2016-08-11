@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="50dip" android:orientation="vertical"
+    tools:showIn="@layout/activity_registro">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_registro">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/optParticipante"
+            android:hint="@string/OptParticipante"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/optPatrocinador"
+            android:hint="@string/optPatrocinador"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtusername"
+        android:hint="@string/txtusername"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_registro">
+        <EditText android:id="@+id/papellido"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/pApellido"/>
+
+        <EditText android:id="@+id/sapellido"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sApellido"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_registro">
+        <!-- agrega campo texto   -->
+        <EditText android:id="@+id/pnombre"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/pNombre"/>
+        <EditText android:id="@+id/snombre"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sNombre"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:ems="10"
+        android:id="@+id/phone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ci"
+        android:ems="10"
+        android:id="@+id/ci" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:ems="10"
+        android:id="@+id/email" />
+
+    <EditText android:id="@+id/txtPass"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dip" />
+
+
+    <Button android:id="@+id/btnRegister" android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:text="@string/registrar"
+        android:hint="@string/registrar"
+        android:layout_gravity="center_horizontal" android:paddingLeft="15dip" android:paddingRight="15dip"
+        android:background="#ff0000"
+        android:onClick="registrar" />
+
+
+
+</LinearLayout>
